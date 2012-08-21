@@ -1,0 +1,7 @@
+lib/Template/Plugin/SVG/TT/Graph.pm
+lib/Template/Plugin/SVG/TT/Graph/Bar.pm
+lib/Template/Plugin/SVG/TT/Graph/Pie.pm
+lib/Template/Plugin/SVG/TT/Graph/TimeSeries.pm
+Makefile.PL
+MANIFEST			This list of files
+README.md
