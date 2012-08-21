@@ -29,7 +29,7 @@
 [% data = [ 12, 45, 21 ] -%]
 [% USE graph = SVG.TT.Graph.Pie ( {
     'height' => '600',
-    'width'  => '400',
+    'width'  => '500',
     'show_graph_title'        => 1,
     'graph_title'             => 'Sales in Q1/2002'
     'show_key_data_labels'    => 1,
@@ -52,7 +52,7 @@
   "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
   
-<svg width="400" height="600" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="500" height="600" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\  -->
 <!-- Created with SVG::TT::Graph   -->
@@ -149,7 +149,7 @@
   ]]></script>
 
 <!-- svg bg -->
-<rect x="0" y="0" width="400" height="600" class="svgBackground"/>
+<rect x="0" y="0" width="500" height="600" class="svgBackground"/>
 
 <!-- ///////////////// CALCULATE GRAPH AREA AND BOUNDARIES //////////////// -->
 <!-- get dimensions of actual graph area (NOT SVG area) -->
@@ -167,7 +167,7 @@
     
                     <!-- if there is a key, move the pie chart -->
             <!-- if the radius is too big, shrink it -->
-            
+                          
 <!-- if chart expanded -->
   
 
@@ -175,7 +175,7 @@
           
     
 
-<circle cx="200" cy="217.5" r="180" fill="#ffffff"/>
+<circle cx="250" cy="192.5" r="158.125" fill="#ffffff"/>
 
 
 <!-- half values used to show values next to wedges -->
@@ -193,15 +193,15 @@
         
 
     <!-- segments displayed clockwise from ' 3 o'clock ' -->
-                  <path id="w1" d="M370 217.5 A170 170 0 
-        0 1 296.571121177 357.4071783527 L200 217.5 Z" class="dataPoint1" onmouseover="togglePath(1);" onmouseout="togglePath(1);"/>
+                  <path id="w1" d="M398.125 192.5 A148.125 148.125 0 
+        0 1 334.1446901432 314.4044164323 L250 192.5 Z" class="dataPoint1" onmouseover="togglePath(1);" onmouseout="togglePath(1);"/>
         
     
     <!-- show values next to wedges -->
-                                <text id="d1" x="345.5275566136" y="301.5028777954">15%</text>
+                                <text id="d1" x="376.1582019023" y="266.3370663144">15%</text>
 
     <!-- show rollover field names next to wedge values -->
-            <text id="n1" x="200" y="427.5" class="subTitle" opacity="0">Jan</text>
+            <text id="n1" x="250" y="380.625" class="subTitle" opacity="0">Jan</text>
         
                 
                 
@@ -215,15 +215,15 @@
         
 
     <!-- segments displayed clockwise from ' 3 o'clock ' -->
-                                          <path id="w2" d="M280.6758592022 363.4354987451 A170 170 0 
-        1 1 163.6128478741 54.7678912686 L184.1047380252 223.5283203924 Z" class="dataPoint2" onmouseover="togglePath(2);" onmouseout="togglePath(2);"/>
+                                          <path id="w2" d="M320.2947743784 319.657033833 A148.125 148.125 0 
+        1 1 218.2950181844 50.7076846715 L236.1500842352 197.7526174007 Z" class="dataPoint2" onmouseover="togglePath(2);" onmouseout="togglePath(2);"/>
         
     
     <!-- show values next to wedges -->
-                                <text id="d2" x="36.0473802522" y="282.7832039238">58%</text>
+                                <text id="d2" x="106.5008423521" y="250.0261740071">58%</text>
 
     <!-- show rollover field names next to wedge values -->
-            <text id="n2" x="200" y="427.5" class="subTitle" opacity="0">Feb</text>
+            <text id="n2" x="250" y="380.625" class="subTitle" opacity="0">Feb</text>
         
                 
                 
@@ -237,15 +237,15 @@
         
 
     <!-- segments displayed clockwise from ' 3 o'clock ' -->
-                  <path id="w3" d="M179.5081098489 48.7395708762 A170 170 0 
-        0 1 369.9999999976 217.4990977795 L200 217.5 Z" class="dataPoint3" onmouseover="togglePath(3);" onmouseout="togglePath(3);"/>
+                  <path id="w3" d="M232.1449339492 45.4550672708 A148.125 148.125 0 
+        0 1 398.1249999979 192.499213874 L250 192.5 Z" class="dataPoint3" onmouseover="togglePath(3);" onmouseout="togglePath(3);"/>
         
     
     <!-- show values next to wedges -->
-                                <text id="d3" x="307.7302674867" y="95.2526550675">27%</text>
+                                <text id="d3" x="343.224534538" y="86.6263943051">27%</text>
 
     <!-- show rollover field names next to wedge values -->
-            <text id="n3" x="200" y="427.5" class="subTitle" opacity="0">Mar</text>
+            <text id="n3" x="250" y="380.625" class="subTitle" opacity="0">Mar</text>
         
                 
   
@@ -257,19 +257,19 @@
       <!-- only allow key under or over chart if the height dimensions are greatest -->
         <!-- calc y position of start of key -->
                                   
-          <rect x="30" y="447" width="12" height="12" class="key1"/>
-    <text x="47" y="459" class="keyText">Jan  15%</text>  
-              <rect x="30" y="464" width="12" height="12" class="key2"/>
-    <text x="47" y="476" class="keyText">Feb  58%</text>  
-              <rect x="30" y="481" width="12" height="12" class="key3"/>
-    <text x="47" y="493" class="keyText">Mar  27%</text>  
+          <rect x="30" y="403.25" width="12" height="12" class="key1"/>
+    <text x="47" y="415.25" class="keyText">Jan  15%</text>  
+              <rect x="30" y="420.25" width="12" height="12" class="key2"/>
+    <text x="47" y="432.25" class="keyText">Feb  58%</text>  
+              <rect x="30" y="437.25" width="12" height="12" class="key3"/>
+    <text x="47" y="449.25" class="keyText">Mar  27%</text>  
       
 
 
 <!-- //////////////////////////////// MAIN TITLES ////////////////////////// -->
 
 <!-- main graph title -->
-  <text x="200" y="15" class="mainTitle">Sales in Q1/2002</text>
+  <text x="250" y="15" class="mainTitle">Sales in Q1/2002</text>
 
 <!-- graph sub title -->
 
@@ -286,7 +286,7 @@
 [% data03 = [ 33, 14, 38 ] -%]
 [% USE graph = SVG.TT.Graph.Bar ( {
     'height' => '600' ,
-    'width'  => '400',
+    'width'  => '500',
     'show_graph_title'        => 1,
     'graph_title'             => 'Sales in Q1 2002/2003',
     'fields'                  => cols,
@@ -312,7 +312,7 @@
   "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
   
-<svg width="400" height="600" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="500" height="600" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\  -->
 <!-- Created with SVG::TT::Graph   -->
 <!-- Stephen Morgan / Leo Lapworth -->
@@ -432,7 +432,7 @@
 </style>
 </defs>
 <!-- svg bg -->
-<rect x="0" y="0" width="400" height="600" class="svgBackground"/>
+<rect x="0" y="0" width="500" height="600" class="svgBackground"/>
 
 <!-- ///////////////// CALCULATE GRAPH AREA AND BOUNDARIES //////////////// -->
 <!-- get dimensions of actual graph area (NOT SVG area) -->
@@ -496,11 +496,11 @@
 
 <!-- //////////////////////////////  BUILD GRAPH AREA ////////////////////////////// -->
 <!-- graph bg -->
-<rect x="52" y="35" width="250" height="459" class="graphBackground"/>
+<rect x="52" y="35" width="350" height="459" class="graphBackground"/>
 
 <!-- axis -->
 <path d="M52 35 v459" class="axis" id="xAxis"/>
-<path d="M52 494 h250" class="axis" id="yAxis"/>
+<path d="M52 494 h350" class="axis" id="yAxis"/>
 
 <!-- //////////////////////////////  AXIS DISTRIBUTIONS //////////////////////////// -->
 <!-- get number of data points on x scale -->
@@ -510,10 +510,10 @@
 
     
 <!-- x axis labels -->
-                <text x="88.5" y="509"  transform="rotate(90 86 509)" style="text-anchor: start" class="xAxisLabels">Jan</text>
-                                              <text x="171.5" y="526" transform="rotate(90 169 526)" style="text-anchor: start" class="xAxisLabels">Feb</text>
-        <path d="M171.5 494 v17" class="staggerGuideLine" />
-                                              <text x="254.5" y="509" transform="rotate(90 252 509)" style="text-anchor: start" class="xAxisLabels">Mar</text>
+                <text x="105" y="509"  transform="rotate(90 102.5 509)" style="text-anchor: start" class="xAxisLabels">Jan</text>
+                                              <text x="221" y="526" transform="rotate(90 218.5 526)" style="text-anchor: start" class="xAxisLabels">Feb</text>
+        <path d="M221 494 v17" class="staggerGuideLine" />
+                                              <text x="337" y="509" transform="rotate(90 334.5 509)" style="text-anchor: start" class="xAxisLabels">Mar</text>
                                 
 
 <!-- distribute Y scale -->
@@ -521,32 +521,32 @@
               <!-- no stroke for first line -->
       <text x="47" y="494" class="yAxisLabels">0</text>
                             <text x="47" y="449" class="yAxisLabels">6.2</text>
-      <path d="M52 449 h250" class="guideLines"/>
+      <path d="M52 449 h350" class="guideLines"/>
                             <text x="47" y="404" class="yAxisLabels">12.4</text>
-      <path d="M52 404 h250" class="guideLines"/>
+      <path d="M52 404 h350" class="guideLines"/>
                             <text x="47" y="359" class="yAxisLabels">18.6</text>
-      <path d="M52 359 h250" class="guideLines"/>
+      <path d="M52 359 h350" class="guideLines"/>
                             <text x="47" y="314" class="yAxisLabels">24.8</text>
-      <path d="M52 314 h250" class="guideLines"/>
+      <path d="M52 314 h350" class="guideLines"/>
                             <text x="47" y="269" class="yAxisLabels">31</text>
-      <path d="M52 269 h250" class="guideLines"/>
+      <path d="M52 269 h350" class="guideLines"/>
                             <text x="47" y="224" class="yAxisLabels">37.2</text>
-      <path d="M52 224 h250" class="guideLines"/>
+      <path d="M52 224 h350" class="guideLines"/>
                             <text x="47" y="179" class="yAxisLabels">43.4</text>
-      <path d="M52 179 h250" class="guideLines"/>
+      <path d="M52 179 h350" class="guideLines"/>
                             <text x="47" y="134" class="yAxisLabels">49.6</text>
-      <path d="M52 134 h250" class="guideLines"/>
+      <path d="M52 134 h350" class="guideLines"/>
                             <text x="47" y="89" class="yAxisLabels">55.8</text>
-      <path d="M52 89 h250" class="guideLines"/>
+      <path d="M52 89 h350" class="guideLines"/>
                             <text x="47" y="44" class="yAxisLabels">62</text>
-      <path d="M52 44 h250" class="guideLines"/>
+      <path d="M52 44 h350" class="guideLines"/>
               
 
 
 <!-- //////////////////////////////  AXIS TITLES ////////////////////////////// -->
 
 <!-- x axis title -->
-          <text x="177" y="573" class="xAxisTitle">Months</text>
+          <text x="227" y="573" class="xAxisTitle">Months</text>
 
 <!-- y axis title -->
       <text class="yAxisTitle" transform="translate(15,264.5) rotate(270)">Sales in thousands</text>
@@ -560,34 +560,34 @@
 
     <!-- find the lowest data value for each dataset -->
 
-        <path d="M52 494 V406.903225806452 h73 V494 Z" class="fill1"/>
-          <text x="88.5" y="400.903225806452" class="dataPointLabel">12</text>
-                  <path d="M52 406.903225806452 V167.387096774194 h73 V406.903225806452 Z" class="fill2"/>
-          <text x="88.5" y="161.387096774194" class="dataPointLabel">33</text>
+        <path d="M52 494 V406.903225806452 h106 V494 Z" class="fill1"/>
+          <text x="105" y="400.903225806452" class="dataPointLabel">12</text>
+                  <path d="M52 406.903225806452 V167.387096774194 h106 V406.903225806452 Z" class="fill2"/>
+          <text x="105" y="161.387096774194" class="dataPointLabel">33</text>
                     <!-- find the lowest data value for each dataset -->
 
-        <path d="M135 494 V167.387096774194 h73 V494 Z" class="fill1"/>
-          <text x="171.5" y="161.387096774194" class="dataPointLabel">45</text>
-                  <path d="M135 167.387096774194 V65.7741935483871 h73 V167.387096774194 Z" class="fill2"/>
-          <text x="171.5" y="59.7741935483871" class="dataPointLabel">14</text>
+        <path d="M168 494 V167.387096774194 h106 V494 Z" class="fill1"/>
+          <text x="221" y="161.387096774194" class="dataPointLabel">45</text>
+                  <path d="M168 167.387096774194 V65.7741935483871 h106 V167.387096774194 Z" class="fill2"/>
+          <text x="221" y="59.7741935483871" class="dataPointLabel">14</text>
                     <!-- find the lowest data value for each dataset -->
 
-        <path d="M218 494 V341.58064516129 h73 V494 Z" class="fill1"/>
-          <text x="254.5" y="335.58064516129" class="dataPointLabel">21</text>
-                  <path d="M218 341.58064516129 V65.7741935483871 h73 V341.58064516129 Z" class="fill2"/>
-          <text x="254.5" y="59.7741935483871" class="dataPointLabel">38</text>
+        <path d="M284 494 V341.58064516129 h106 V494 Z" class="fill1"/>
+          <text x="337" y="335.58064516129" class="dataPointLabel">21</text>
+                  <path d="M284 341.58064516129 V65.7741935483871 h106 V341.58064516129 Z" class="fill2"/>
+          <text x="337" y="59.7741935483871" class="dataPointLabel">38</text>
                 
 
 <!-- //////////////////////////////// KEY /////// ////////////////////////// -->
-      <rect x="322" y="52" width="12" height="12" class="key1"/>
-    <text x="339" y="64" class="keyText">Sales 2002</text>
-          <rect x="322" y="69" width="12" height="12" class="key2"/>
-    <text x="339" y="81" class="keyText">Sales 2003</text>
+      <rect x="422" y="52" width="12" height="12" class="key1"/>
+    <text x="439" y="64" class="keyText">Sales 2002</text>
+          <rect x="422" y="69" width="12" height="12" class="key2"/>
+    <text x="439" y="81" class="keyText">Sales 2003</text>
       
 <!-- //////////////////////////////// MAIN TITLES ////////////////////////// -->
 
 <!-- main graph title -->
-  <text x="200" y="15" class="mainTitle">Sales in Q1 2002/2003</text>
+  <text x="250" y="15" class="mainTitle">Sales in Q1 2002/2003</text>
 
 <!-- graph sub title -->
 </svg>
@@ -604,7 +604,7 @@
 [% data03 = [ 33, 14, 38 ] -%]
 [% USE graph = SVG.TT.Graph.BarLine ( {
     'height' => '600' ,
-    'width'  => '400',
+    'width'  => '500',
     'show_graph_title'        => 1,
     'graph_title'             => 'Sales in Q1 2002/2003',
     'fields'                  => cols,
@@ -632,7 +632,7 @@
   "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
   
-<svg width="400" height="600" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="500" height="600" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\  -->
 <!-- Created with SVG::TT::Graph   -->
 <!-- Stephen Morgan / Leo Lapworth -->
@@ -764,7 +764,7 @@
 </style>
 </defs>
 <!-- svg bg -->
-<rect x="0" y="0" width="400" height="600" class="svgBackground"/>
+<rect x="0" y="0" width="500" height="600" class="svgBackground"/>
   
 <!-- ///////////////// CALCULATE GRAPH AREA AND BOUNDARIES //////////////// -->
 <!-- get dimensions of actual graph area (NOT SVG area) -->
@@ -840,13 +840,13 @@
 
 <!-- //////////////////////////////  BUILD GRAPH AREA ////////////////////////////// -->
 <!-- graph bg -->
-<rect x="43" y="35" width="173" height="459" class="graphBackground"/>
+<rect x="43" y="35" width="273" height="459" class="graphBackground"/>
 
 <!-- axis -->
 <path d="M43 35 v459" class="axis" id="xAxis"/>
-<path d="M43 494 h173" class="axis" id="yAxis"/>
+<path d="M43 494 h273" class="axis" id="yAxis"/>
 
-<path d="M216 35 v459" class="axis" id="yAxis2"/>
+<path d="M316 35 v459" class="axis" id="yAxis2"/>
 <!-- //////////////////////////////  AXIS DISTRIBUTIONS //////////////////////////// -->
 <!-- get number of data points on x scale -->
 <!-- get distribution width on x axis -->
@@ -856,10 +856,10 @@
     
 
 <!-- x axis labels -->
-                <text x="66.8333333333333" y="509" transform="rotate(90 64.3333333333333 509)" style="text-anchor: start" class="xAxisLabels">Jan</text>
-                                              <text x="124.5" y="526" transform="rotate(90 122 526)" style="text-anchor: start" class="xAxisLabels">Feb</text>
-        <path d="M124.5 494 v17" class="staggerGuideLine" />
-                                              <text x="182.166666666667" y="509" transform="rotate(90 179.666666666667 509)" style="text-anchor: start" class="xAxisLabels">Mar</text>
+                <text x="83.5" y="509" transform="rotate(90 81 509)" style="text-anchor: start" class="xAxisLabels">Jan</text>
+                                              <text x="174.5" y="526" transform="rotate(90 172 526)" style="text-anchor: start" class="xAxisLabels">Feb</text>
+        <path d="M174.5 494 v17" class="staggerGuideLine" />
+                                              <text x="265.5" y="509" transform="rotate(90 263 509)" style="text-anchor: start" class="xAxisLabels">Mar</text>
                                 
 
 <!-- distribute Y scale -->
@@ -867,59 +867,59 @@
                 <!-- no stroke for first line -->
       <text x="38" y="494" class="yAxisLabels">0</text>
                             <text x="38" y="449" class="yAxisLabels">4.7</text>
-      <path d="M43 449 h173" class="guideLines"/>
+      <path d="M43 449 h273" class="guideLines"/>
                             <text x="38" y="404" class="yAxisLabels">9.4</text>
-      <path d="M43 404 h173" class="guideLines"/>
+      <path d="M43 404 h273" class="guideLines"/>
                             <text x="38" y="359" class="yAxisLabels">14.1</text>
-      <path d="M43 359 h173" class="guideLines"/>
+      <path d="M43 359 h273" class="guideLines"/>
                             <text x="38" y="314" class="yAxisLabels">18.8</text>
-      <path d="M43 314 h173" class="guideLines"/>
+      <path d="M43 314 h273" class="guideLines"/>
                             <text x="38" y="269" class="yAxisLabels">23.5</text>
-      <path d="M43 269 h173" class="guideLines"/>
+      <path d="M43 269 h273" class="guideLines"/>
                             <text x="38" y="224" class="yAxisLabels">28.2</text>
-      <path d="M43 224 h173" class="guideLines"/>
+      <path d="M43 224 h273" class="guideLines"/>
                             <text x="38" y="179" class="yAxisLabels">32.9</text>
-      <path d="M43 179 h173" class="guideLines"/>
+      <path d="M43 179 h273" class="guideLines"/>
                             <text x="38" y="134" class="yAxisLabels">37.6</text>
-      <path d="M43 134 h173" class="guideLines"/>
+      <path d="M43 134 h273" class="guideLines"/>
                             <text x="38" y="89" class="yAxisLabels">42.3</text>
-      <path d="M43 89 h173" class="guideLines"/>
+      <path d="M43 89 h273" class="guideLines"/>
                             <text x="38" y="44" class="yAxisLabels">47</text>
-      <path d="M43 44 h173" class="guideLines"/>
+      <path d="M43 44 h273" class="guideLines"/>
               
 
 <!-- distribute secondary Y scale -->
 
 <!-- ensure y_data_points butt up to edge of graph -->
 
-      <text x="221" y="494" class="yAxisLabels" style="text-anchor: start">0</text>
+      <text x="321" y="494" class="yAxisLabels" style="text-anchor: start">0</text>
 
-              <text x="221" y="449" class="yAxisLabels" style="text-anchor: start">4</text>
+              <text x="321" y="449" class="yAxisLabels" style="text-anchor: start">4</text>
 
-              <text x="221" y="404" class="yAxisLabels" style="text-anchor: start">8</text>
+              <text x="321" y="404" class="yAxisLabels" style="text-anchor: start">8</text>
 
-              <text x="221" y="359" class="yAxisLabels" style="text-anchor: start">12</text>
+              <text x="321" y="359" class="yAxisLabels" style="text-anchor: start">12</text>
 
-              <text x="221" y="314" class="yAxisLabels" style="text-anchor: start">16</text>
+              <text x="321" y="314" class="yAxisLabels" style="text-anchor: start">16</text>
 
-              <text x="221" y="269" class="yAxisLabels" style="text-anchor: start">20</text>
+              <text x="321" y="269" class="yAxisLabels" style="text-anchor: start">20</text>
 
-              <text x="221" y="224" class="yAxisLabels" style="text-anchor: start">24</text>
+              <text x="321" y="224" class="yAxisLabels" style="text-anchor: start">24</text>
 
-              <text x="221" y="179" class="yAxisLabels" style="text-anchor: start">28</text>
+              <text x="321" y="179" class="yAxisLabels" style="text-anchor: start">28</text>
 
-              <text x="221" y="134" class="yAxisLabels" style="text-anchor: start">32</text>
+              <text x="321" y="134" class="yAxisLabels" style="text-anchor: start">32</text>
 
-              <text x="221" y="89" class="yAxisLabels" style="text-anchor: start">36</text>
+              <text x="321" y="89" class="yAxisLabels" style="text-anchor: start">36</text>
 
-              <text x="221" y="44" class="yAxisLabels" style="text-anchor: start">40</text>
+              <text x="321" y="44" class="yAxisLabels" style="text-anchor: start">40</text>
 
           
 
 <!-- //////////////////////////////  AXIS TITLES ////////////////////////////// -->
 
 <!-- x axis title -->
-          <text x="129.5" y="573" class="xAxisTitle">Months</text>
+          <text x="179.5" y="573" class="xAxisTitle">Months</text>
 
 <!-- y axis title -->
       <text class="yAxisTitle" transform="translate(15,264.5) rotate(270)">Sales in thousands</text>
@@ -932,44 +932,44 @@
 
 
 <!-- Draw BAR CHART -->
-    <path d="M43 494 V379.106382978723 h47.6666666666667 V494 Z" class="fill1"/>
-      <text x="66.8333333333333" y="373.106382978723" class="dataPointLabel">12</text>
-          <path d="M100.666666666667 494 V63.1489361702128 h47.6666666666667 V494 Z" class="fill1"/>
-      <text x="124.5" y="57.1489361702128" class="dataPointLabel">45</text>
-          <path d="M158.333333333333 494 V292.936170212766 h47.6666666666667 V494 Z" class="fill1"/>
-      <text x="182.166666666667" y="286.936170212766" class="dataPointLabel">21</text>
+    <path d="M43 494 V379.106382978723 h81 V494 Z" class="fill1"/>
+      <text x="83.5" y="373.106382978723" class="dataPointLabel">12</text>
+          <path d="M134 494 V63.1489361702128 h81 V494 Z" class="fill1"/>
+      <text x="174.5" y="57.1489361702128" class="dataPointLabel">45</text>
+          <path d="M225 494 V292.936170212766 h81 V494 Z" class="fill1"/>
+      <text x="265.5" y="286.936170212766" class="dataPointLabel">21</text>
       
 <!-- Draw Line graph -->
 <path d="M
-      66.8333333333333 122.75         L     124.5 336.5            182.166666666667 66.5      " class="line2"/>
+      83.5 122.75         L     174.5 336.5            265.5 66.5      " class="line2"/>
 
               <!-- datapoint shown -->
-      <circle cx="66.8333333333333" cy="122.75" r="2.5" class="dataPoint2"/>
+      <circle cx="83.5" cy="122.75" r="2.5" class="dataPoint2"/>
                 
           <!-- datavalue shown -->
-      <text x="66.8333333333333" y="116.75" class="dataPointLabel">33</text>
+      <text x="83.5" y="116.75" class="dataPointLabel">33</text>
                 <!-- datapoint shown -->
-      <circle cx="124.5" cy="336.5" r="2.5" class="dataPoint2"/>
+      <circle cx="174.5" cy="336.5" r="2.5" class="dataPoint2"/>
                 
           <!-- datavalue shown -->
-      <text x="124.5" y="330.5" class="dataPointLabel">14</text>
+      <text x="174.5" y="330.5" class="dataPointLabel">14</text>
                 <!-- datapoint shown -->
-      <circle cx="182.166666666667" cy="66.5" r="2.5" class="dataPoint2"/>
+      <circle cx="265.5" cy="66.5" r="2.5" class="dataPoint2"/>
                 
           <!-- datavalue shown -->
-      <text x="182.166666666667" y="60.5" class="dataPointLabel">38</text>
+      <text x="265.5" y="60.5" class="dataPointLabel">38</text>
       
 
 <!-- //////////////////////////////// KEY ///////////////////////////////// -->
-      <rect x="279" y="52" width="12" height="12" class="key1"/>
-    <text x="296" y="64" class="keyText">Sales 2002</text>
-          <rect x="279" y="69" width="12" height="12" class="key2"/>
-    <text x="296" y="81" class="keyText">Sales 2003</text>
+      <rect x="379" y="52" width="12" height="12" class="key1"/>
+    <text x="396" y="64" class="keyText">Sales 2002</text>
+          <rect x="379" y="69" width="12" height="12" class="key2"/>
+    <text x="396" y="81" class="keyText">Sales 2003</text>
       
 <!-- //////////////////////////////// MAIN TITLES ////////////////////////// -->
 
 <!-- main graph title -->
-  <text x="200" y="15" class="mainTitle">Sales in Q1 2002/2003</text>
+  <text x="250" y="15" class="mainTitle">Sales in Q1 2002/2003</text>
 
 <!-- graph sub title -->
 </svg>
