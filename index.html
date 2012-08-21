@@ -278,8 +278,32 @@
                     <a name="bar"></a>
                     <h2>Template::Plugin::SVG::TT::Graph::bar</h2>
                 </div>
-                <pre>
-                </pre>
+                    <pre>
+[% cols = [ 'Jan', 'Feb', 'Mar' ] -%]
+[% data02 = [ 12, 45, 21 ] -%]
+[% data03 = [ 33, 14, 38 ] -%]
+[% USE graph = SVG.TT.Graph.Bar ( {
+    'height' => '600' ,
+    'width'  => '400',
+    'show_graph_title'        => 1,
+    'graph_title'             => 'Sales in Q1 2002/2003',
+    'fields'                  => cols,
+    'show_x_labels'           => 1,
+    'stagger_x_labels'        => 1,
+    'rotate_x_labels'         => 1,
+    'show_y_labels'           => 1,
+    'show_x_title'            => 1,
+    'x_title'                 => 'Months',
+    'show_y_title'            => 1,
+    'y_title'                 => 'Sales in thousands',
+    'show_graph_title'        => 1,
+    'key'                     => 1,
+    'key_placement'           => 'B'
+    }) -%]
+[% graph.add_data({ 'data'  => data02, 'title' => 'Sales 2002' }) -%]
+[% graph.add_data({ 'data'  => data03, 'title' => 'Sales 2003' }) -%]
+[% graph.burn %]
+                    </pre>
                 <div class="well">
                                                                                                                                                <?xml version="1.0"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
