@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap-combined.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid" style="padding-top: 50px">
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="well" style="max-width: 340px; padding: 8px 0;">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Available Graphs</li>
+                        <li><a href="#pie">Pie</a></li>
+                        <li><a href="#bar">Bar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span10">
+                <h1>Template::Plugin::SVG::TT::Graph Demonstration</h1>
+                <div class="page-header">
+                    <a name="pie"></a>
+                    <h2>Template::Plugin::SVG::TT::Graph::Pie</h2>
+                </div>
+                <pre>
+[% cols = [ 'Jan', 'Feb', 'Mar' ] -%]
+[% data = [ 12, 45, 21 ] -%]
+[% USE graph = SVG.TT.Graph.Pie ( {
+    'height' => '600',
+    'width'  => '400',
+    'show_graph_title'        => 1,
+    'graph_title'             => 'Sales in Q1/2002'
+    'show_key_data_labels'    => 1,
+    'show_key_actual_values'  => 0,
+    'show_key_percent'        => 1,
+    'rollover_values'         => 1,
+    'key'                     => 1,
+    'key_placement'           => 'B',
+    'expand_greatest'         => 1,
+    'fields' => cols }
+) -%]
+
+[% graph.add_data({ 'data'  => data, 'title' => 'Sales 2002' }) -%]
+[% graph.burn %]
+            </pre>
+                <div class="well">
+                                                            
+                                        <?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+  
+<svg width="400" height="600" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\  -->
+<!-- Created with SVG::TT::Graph   -->
+<!-- Stephen Morgan / Leo Lapworth -->
+<!-- ////////////////////////////  -->
+<defs>
+  <radialGradient id="shadow">
+    <stop offset="85%" style="stop-color: #ccc;"/>
+    <stop offset="100%" style="stop-color: #ccc;stop-opacity: 0"/>
+  </radialGradient>
+
+<!-- include default stylesheet if none specified -->
+<style type="text/css">
+<![CDATA[
+/* Copy from here for external style sheet */
+.svgBackground{
+  fill:none;
+}
+.graphBackground{
+  fill:#f0f0f0;
+}
+
+/* graphs titles */
+.mainTitle{
+  text-anchor: middle;
+  fill: #000000;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+.subTitle{
+  text-anchor: middle;
+  fill: #999999;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.dataPointLabel{
+  fill: #000000;
+  text-anchor:middle;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+
+          
+  .key1,.dataPoint1{
+    fill: #ff0000;
+    fill-opacity: 0.5;
+    stroke: none;
+    stroke-width: 1px;
+  }
+
+            
+  .key2,.dataPoint2{
+    fill: #0000ff;
+    fill-opacity: 0.5;
+    stroke: none;
+    stroke-width: 1px;
+  }
+
+            
+  .key3,.dataPoint3{
+    fill: #00ff00;
+    fill-opacity: 0.5;
+    stroke: none;
+    stroke-width: 1px;
+  }
+
+  
+.keyText{
+  fill: #000000;
+  text-anchor:start;
+  font-size: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+/* End copy for external style sheet */
+]]>
+</style>
+</defs>
+
+  <!-- Script to toggle paths when their key is clicked on -->
+  <script language="JavaScript"><![CDATA[
+  function togglePath( series ) {
+    var text = document.getElementById('n' + series);
+    if ( text.getAttribute('opacity') == 0 ) {
+      text.setAttribute('opacity',1);
+    } else {
+      text.setAttribute('opacity',0);
+    }
+  }
+  ]]></script>
+
+<!-- svg bg -->
+<rect x="0" y="0" width="400" height="600" class="svgBackground"/>
+
+<!-- ///////////////// CALCULATE GRAPH AREA AND BOUNDARIES //////////////// -->
+<!-- get dimensions of actual graph area (NOT SVG area) -->
+
+<!-- calc min and max values -->
+                                          
+<!-- reduce height if graph has title or subtitle -->
+
+<!-- set start/default coords of graph --> 
+
+<!-- move centre of pie chart if title present -->
+
+
+<!-- calc radius and check whether KEY will affect this -->
+    
+                    <!-- if there is a key, move the pie chart -->
+            <!-- if the radius is too big, shrink it -->
+            
+<!-- if chart expanded -->
+  
+
+  <!-- check if a shadow size has been entered -->
+          
+    
+
+<circle cx="200" cy="217.5" r="180" fill="#ffffff"/>
+
+
+<!-- half values used to show values next to wedges -->
+
+  
+              
+    <!-- calc percentage -->
+    
+        
+          <!-- offset values at start to get mid point -->
+          
+            
+        
+            
+        
+
+    <!-- segments displayed clockwise from ' 3 o'clock ' -->
+                  <path id="w1" d="M370 217.5 A170 170 0 
+        0 1 296.571121177 357.4071783527 L200 217.5 Z" class="dataPoint1" onmouseover="togglePath(1);" onmouseout="togglePath(1);"/>
+        
+    
+    <!-- show values next to wedges -->
+                                <text id="d1" x="345.5275566136" y="301.5028777954">15%</text>
+
+    <!-- show rollover field names next to wedge values -->
+            <text id="n1" x="200" y="427.5" class="subTitle" opacity="0">Jan</text>
+        
+                
+                
+    <!-- calc percentage -->
+    
+        
+              
+            
+        
+            
+        
+
+    <!-- segments displayed clockwise from ' 3 o'clock ' -->
+                                          <path id="w2" d="M280.6758592022 363.4354987451 A170 170 0 
+        1 1 163.6128478741 54.7678912686 L184.1047380252 223.5283203924 Z" class="dataPoint2" onmouseover="togglePath(2);" onmouseout="togglePath(2);"/>
+        
+    
+    <!-- show values next to wedges -->
+                                <text id="d2" x="36.0473802522" y="282.7832039238">58%</text>
+
+    <!-- show rollover field names next to wedge values -->
+            <text id="n2" x="200" y="427.5" class="subTitle" opacity="0">Feb</text>
+        
+                
+                
+    <!-- calc percentage -->
+    
+        
+              
+            
+        
+            
+        
+
+    <!-- segments displayed clockwise from ' 3 o'clock ' -->
+                  <path id="w3" d="M179.5081098489 48.7395708762 A170 170 0 
+        0 1 369.9999999976 217.4990977795 L200 217.5 Z" class="dataPoint3" onmouseover="togglePath(3);" onmouseout="togglePath(3);"/>
+        
+    
+    <!-- show values next to wedges -->
+                                <text id="d3" x="307.7302674867" y="95.2526550675">27%</text>
+
+    <!-- show rollover field names next to wedge values -->
+            <text id="n3" x="200" y="427.5" class="subTitle" opacity="0">Mar</text>
+        
+                
+  
+
+<!-- //////////////////////////////// KEY ////////////////////////////////// -->
+
+
+          
+      <!-- only allow key under or over chart if the height dimensions are greatest -->
+        <!-- calc y position of start of key -->
+                                  
+          <rect x="30" y="447" width="12" height="12" class="key1"/>
+    <text x="47" y="459" class="keyText">Jan  15%</text>  
+              <rect x="30" y="464" width="12" height="12" class="key2"/>
+    <text x="47" y="476" class="keyText">Feb  58%</text>  
+              <rect x="30" y="481" width="12" height="12" class="key3"/>
+    <text x="47" y="493" class="keyText">Mar  27%</text>  
+      
+
+
+<!-- //////////////////////////////// MAIN TITLES ////////////////////////// -->
+
+<!-- main graph title -->
+  <text x="200" y="15" class="mainTitle">Sales in Q1/2002</text>
+
+<!-- graph sub title -->
+
+</svg>
+
+                </div>
+            </div>
+        </body>
+    </html>
