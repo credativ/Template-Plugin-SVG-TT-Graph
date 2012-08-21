@@ -5,8 +5,6 @@ use warnings;
 use base qw( Template::Plugin::SVG::TT::Graph Template::Plugin );
 use SVG::TT::Graph::Pie;
 
-our $VERSION = 0.0;
-
 sub new {
     my $class   = shift;
     my $context = shift;
