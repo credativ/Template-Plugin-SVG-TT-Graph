@@ -5,7 +5,7 @@ use warnings;
 
 use MIME::Base64 ();
 
-our $VERSION = '0.0.1';
+our $VERSION = '0.5';
 
 sub add_data {
     my $self = shift;
