@@ -1,0 +1,16 @@
+Source: libtemplate-svg-tt-graph-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 7)
+Build-Depends-Indep: perl
+Maintainer: Patrick Schönfeld <patrick.schoenfeld@credativ.de>
+Standards-Version: 3.9.1
+Homepage: http://search.cpan.org/dist/Template-SVG-TT-Graph/
+
+Package: libtemplate-svg-tt-graph-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: (no short description found)
+ (no description was found)
+ .
+ This description was automagically extracted from the module by dh-make-perl.
