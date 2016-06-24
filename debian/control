@@ -9,8 +9,7 @@ Homepage: http://search.cpan.org/dist/Template-SVG-TT-Graph/
 
 Package: libtemplate-svg-tt-graph-perl
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
-Description: (no short description found)
- (no description was found)
- .
- This description was automagically extracted from the module by dh-make-perl.
+Depends: ${misc:Depends}, ${perl:Depends}, libsvg-tt-graph-perl
+Description: Template Toolkit plugin to generate graphics in svg format.
+ Template Toolkit plugin to generate create Scalable
+ Vector Graphics (SVG).
