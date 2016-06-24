@@ -1,3 +1,11 @@
+libtemplate-svg-tt-graph-perl (0.5-2) unstable; urgency=medium
+
+  [ Arnd Hannemann ]
+  * Add dependency on libsvg-tt-graph-perl. 
+  * Add description
+
+ -- Maximilian Gaß <maximilian.gass@credativ.de>  Fri, 24 Jun 2016 14:42:04 +0000
+
 libtemplate-svg-tt-graph-perl (0.5-1) unstable; urgency=low
 
   * Initial Release.
